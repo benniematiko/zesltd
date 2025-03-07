@@ -1,0 +1,182 @@
+.ourservice {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background-color: azure;
+
+  .container {
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ourservicetitle {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      p {
+        font-size: large;
+        color: #da7426;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+      }
+    }
+
+    .ourservicemaintitle {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      h2 {
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+    }
+
+    .ourservicesviewall {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      p {
+        text-decoration: underline;
+        margin-bottom: 12px;
+        cursor: pointer;
+      }
+    }
+
+    .ourservicesection {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 64%;
+      grid-template-areas: ".left .right";
+      gap: 30px;
+
+      
+
+
+      .left {
+        width: 100%;
+        position: relative;
+
+        .leftoverlay {
+          width: 30%;
+          position: absolute;
+          top: 300px;
+          background-color: azure;
+          opacity: 30%;
+          padding: 12px;
+          border-left: 10px solid #da7426
+        }
+
+        .leftimage {
+          max-width: auto;
+
+          .ourservicesleft {
+            width: 100%;;
+          }
+        }
+      }
+
+      .right {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        
+        .ourworkcard {
+          max-width: 3800px;
+          background-color: white;
+          cursor: pointer;
+          padding: 12px;
+
+       
+
+          .imgcard {
+            width: 100%;
+            border-radius: 5px;
+          }
+
+
+          .details {
+
+            .ourworkcardtitle {
+
+              p {
+                font-size:16px;
+                font-weight: 500;
+                text-transform: capitalize;
+              }
+
+            }
+
+            .morebtn button {
+              padding: 6px 12px;
+              border: none;
+              outline: none;
+              margin-top: 12px;
+              background-color: #da7426;
+              color: white;
+              cursor: pointer;
+              transition:  background-color 0.15s ease-in;
+
+
+              &:hover {
+                background-color: #a34b08;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 960px) {
+  .ourservice {
+    width: 100%;
+   
+    .container {
+      width: 92%;
+      
+
+      .ourservicesection {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          ".left"
+          ".right";
+
+        .left {
+          width: 100%;
+          .ourservicesleft {
+            height: 500px;
+          }
+        }
+
+        .right {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+
+          .ourworkcard {
+            max-width: 300px;
+
+            .imgcard {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

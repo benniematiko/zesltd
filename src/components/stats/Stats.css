@@ -1,0 +1,50 @@
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  .container {
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background-color: #da7426;
+
+    .statone,
+    .stattwo,
+    .statthree,
+    .statfour {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 0;
+      color: white;
+      position: relative;
+
+      p {
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+
+    .border {
+      position: absolute;
+      height: 60px;
+      border-right: 1px dotted #fff;
+    }
+  }
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 960px) {
+  .stats {
+    .container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+}

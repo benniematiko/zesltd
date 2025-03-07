@@ -1,0 +1,56 @@
+.services {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+ 
+  .container {
+    width: 86%;
+    /* display: flex;
+    align-items: center; */
+
+    .ourservicestitle {
+      width: 100%;
+      margin-bottom: 8px;
+
+      p {
+
+        color: #da7426;
+        text-transform: uppercase;
+        font-size: large;
+
+      }
+    }
+
+    .ourservicescards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .servicescard {
+
+        max-width: 400px;
+
+        background-color: yellow;
+
+        &:hover {
+          background-color: lightgray;
+          cursor: pointer;
+        }
+
+        .servicesimage {
+         
+
+          .serviceimg {
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+
+}

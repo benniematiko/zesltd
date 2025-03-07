@@ -1,0 +1,135 @@
+.ourteam {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 86%;
+
+    .ourteamtitle {
+      width: 100%;
+      margin-bottom: 8px;
+      
+
+      p {
+        color: #da7426;
+        text-transform: uppercase;
+        font-size: large;
+      }
+    }
+
+    .ourteammaintitle {
+      width: 100%;
+      margin-bottom: 12px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      h2 {
+        font-weight: 600;
+        width: 20%;
+      }
+
+      span {
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .ourteamcards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .ourteamcard {
+        
+        &:hover {
+          background-color: lightgray;
+          cursor: pointer;
+        }
+
+        .teamimage {
+          max-width: 400px;
+
+          .imgteam {
+            width: 100%;
+          }
+        }
+
+        .ourteamdetails {
+          padding: 8px;
+
+          .ourteamtitle {
+            p {
+              color: black;
+              text-transform: capitalize;
+            }
+          }
+
+          .teamspecialization {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+
+            span {
+              color: #da7426;
+            }
+          }
+
+          .socialsteam {
+            p {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 8px;
+              color: gray;
+
+              span {
+                font-size: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 960px) {
+  .ourteam {
+    .container {
+      width: 92%;
+
+      .ourteamtitle {
+        p {
+          font-size: medium;
+        }
+      }
+
+      .ourteammaintitle {
+        h2 {
+          font-size: 22px;
+          font-weight: 300;
+          width: 100%;
+        }
+      }
+
+      .ourteamcards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        flex-wrap: wrap;
+        row-gap: 35px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

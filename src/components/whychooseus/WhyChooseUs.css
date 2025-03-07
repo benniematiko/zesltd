@@ -1,0 +1,141 @@
+.whychooseus {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  .container {
+    width: 86%;
+
+    .whychooseustitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p {
+        color: #da7426;
+        text-transform: uppercase;
+        font-size: large;
+      }
+    }
+
+    .whychooseusmaintitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom:28px;
+
+      h2 {
+        font-weight: 500;
+      }
+    }
+
+    .whychooseussection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      .left {
+        background-color: azure;
+
+        .leftone {
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px;
+          padding: 16px 30px;
+
+          span {
+            margin-right: 18px;
+            color: #da7426;
+            font-size: 28px;
+            background-color: white;
+            padding: 12px 18px;
+          }
+
+          .leftonedetails {
+            display: flex;
+            flex-direction:column ;
+
+            h4 {
+              margin-bottom: 8px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .right {
+        max-width: 100%;
+        position: relative;
+       
+        .rightphoto {
+          height: 400px;
+          object-fit: contain;         
+        }
+
+        .dotted-shapes-holder {
+          position: absolute;
+          top:0;
+          right: 10px;
+        }
+
+        .added-points {
+          position: absolute;
+          top: 200px;
+          background-color: #da7426;
+          opacity: 30%;
+          padding: 12px;
+          left: -30px;
+          border-right: 10px solid #1a0c02;
+
+          p {
+            z-index: 99;
+            color: black;
+            font-weight: 500;
+          };
+        }
+
+
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 960px) {
+  .whychooseus {
+    .container {
+      width: 92%;
+      .whychooseustitle {
+        p {
+          font-size: medium;
+        }
+      }
+
+      .whychooseusmaintitle {
+        h2 {
+          font-weight: 300;
+          font-size: 22px;
+        }
+      }
+
+      .whychooseussection {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .leftone {
+          display: flex;
+          margin-bottom: 12px;
+
+          span {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}

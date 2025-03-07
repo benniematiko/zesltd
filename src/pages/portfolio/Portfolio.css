@@ -1,0 +1,38 @@
+.portfolio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  
+
+  .container {
+    width: 86%;
+    align-items: center;
+
+    .portfoliotitle {
+      margin-bottom: 30px;
+    }
+
+    .portfoliocards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .portfoliocard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+        background-color: azure;
+        cursor: pointer;
+
+        .portfolioimg {
+          width: 100%;
+        }
+      }
+
+      
+    }
+  }
+}

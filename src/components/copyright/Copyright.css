@@ -1,0 +1,12 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #da7426;
+  color: white;
+
+  .footercopyright p {
+    font-size: 12px;
+  }
+
+}
